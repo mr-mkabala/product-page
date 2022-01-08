@@ -1,23 +1,53 @@
 hr {
   margin: 0 auto;
   width: 80%;
-}
+} /* Tymczasowe */
 
 .container-fluid {
+  padding: 0;
+}
+
+#navbar .container-fluid {
   width: 90%;
 }
 
+/* || NAVBAR SECTION */
+
 .brand-img {
   max-width: 50px;
-}
+} /* Tymczasowe. Na potrzeby grafiki szablonu. */
 
-/* Wyrównanie menu do prawej strony. */
+.navbar {
+  padding: 1rem 0;
+}
 
 .navbar-toggler {
+  transition: none;
+  box-shadow: none;
   border: 0;
   border-radius: 0;
-  /* Postarać się aby przy naciśnięciu przycisku dropdown menu nie pojawiała się obwódla szara wokół. */
 }
+
+.navbar-toggler:focus {
+  box-shadow: none;
+} /* Wyłącza szarą obwódkę wokół przycisku po jego naciśnięciu. */
+
+/* GRAFIKA IKONY DO DROPDOWN MENU, W PRZYPADKU KONIECZNOŚCI ZMIANY
+.navbar-light .navbar-toggler-icon {
+  background-image: url("...");
+} */
+
+.nav-link {
+  margin-left: 1.75rem;
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    margin-left: 0.5rem;
+  }
+}
+
+/* || CAROUSEL SECTION */
 
 .carousel-btn {
   background-color: #000;
@@ -25,8 +55,72 @@ hr {
 
 .carousel-caption {
   color: #000;
-} /* Tymczasowe */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+
+/* ZAOKRĄGLA PRZYCISKI KARUZELI, ZASTĘPUJE PROSTOKĄTY, EW. POZWALA NA ZMIANĘ ICH WIELKOŚCI.
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 0.25rem;
+} */
 
 .carousel-item {
   height: 500px;
 } /* Tymczasowe */
+
+/* || PRODUCTS SECTION */
+
+#products .row {
+  margin: 3rem 0;
+}
+
+.product-box {
+  position: relative;
+} /* Do kwadratowych divów. */
+
+.dummy {
+  margin-top: 100%;
+} /* Do kwadratowych divów. */
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} /* Do kwadratowych divów. */
+
+.yellow {
+  background-color: #FFA;
+} /* Tymczasowe */
+
+.blue {
+  background-color: #ADF;
+} /* Tymczasowe */
+
+.red {
+  background-color: #FAA;
+} /* Tymczasowe */
+
+.purple {
+  background-color: #FAF;
+} /* Tymczasowe */
+
+.green {
+  background-color: #AFA;
+} /* Tymczasowe */
+
+.orange {
+  background-color: #FDA;
+} /* Tymczasowe */
+
+/* || FOOTER SECTION */
+
+#footer .nav-link {
+  margin-left: 0;
+}
