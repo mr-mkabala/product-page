@@ -71,6 +71,7 @@ hr {
 
 .carousel-item {
   height: 500px;
+  position: relative;
 } /* Tymczasowe */
 
 /* || PRODUCTS SECTION */
@@ -123,4 +124,68 @@ hr {
 
 #footer .nav-link {
   margin-left: 0;
+}
+
+/* CAROUSEL NO. 1 SECTION */
+
+.carousel-img-1 {
+  max-height: 450px;
+  transform: rotateZ(-15deg);
+}
+
+.carousel-item .row {
+  height: 100%;
+  position: relative;
+  /* width: 90%; */
+}
+
+.content-left {
+  direction: rtl;
+  height: 100%;
+  margin-left: 4%;
+}
+
+.content-right {
+  height: 100%;
+}
+
+.mobile-align-center {
+  margin-left: 2rem;
+}
+
+@media (max-width: 991px) {
+
+  .carousel-ancestor .offset-1 {
+    margin-left: 0;
+  }
+
+  .carousel-img-1 {
+    max-height: 450px;
+    margin: 0 auto;
+    transform: none;
+    opacity: 0.5;
+  }
+
+  .content-left {
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .content-right {
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .mobile-align-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }

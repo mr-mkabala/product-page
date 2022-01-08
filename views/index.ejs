@@ -1,34 +1,63 @@
 <%- include('header_navbar') -%>
 
 <section id="carousel">
-  <div id="productsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="2"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active product1" data-bs-interval="5000">
-        <!-- <img src="..." class="d-block w-100" alt="..."> -->
-        <div class="carousel-caption d-md-block">
-          <h5>Produkt nr 1</h5>
-          <p>Krótki opis dla produktu nr 1.</p>
+      <div class="carousel-item active" data-bs-interval="5000">
+        <div class="row carousel-ancestor">
+          <div class="col-lg-5 offset-1 content-left d-flex align-items-center">
+            <img class="carousel-img-1" src="images/phone-carousel-1.png" alt="Product picture.">
+          </div>
+          <div class="col-lg-6 content-right d-flex align-items-center">
+            <div class="mobile-align-center">
+              <h5>Produkt nr 1</h5>
+              <p>Krótki opis dla produktu nr 1.</p>
+              <p>
+                <a class="btn btn-lg btn-dark" href="#"><i class="fab fa-apple"></i> App Store</a>
+                <a class="btn btn-lg btn-outline-dark" href="#"><i class="fab fa-google-play"></i> Google Play</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carousel-item product2" data-bs-interval="5000">
-        <!-- <img src="..." class="d-block w-100" alt="..."> -->
-        <div class="carousel-caption d-md-block">
-          <h5>Produkt nr 2</h5>
-          <p>Krótki opis dla produktu nr 2.</p>
+      <div class="carousel-item" data-bs-interval="5000">
+        <div class="row carousel-ancestor">
+          <div class="col-lg-5 offset-1 content-left d-flex align-items-center">
+            <img class="carousel-img-1" src="images/phone-carousel-1.png" alt="Product picture.">
+          </div>
+          <div class="col-lg-6 content-right d-flex align-items-center">
+            <div class="mobile-align-center">
+              <h5>Produkt nr 2</h5>
+              <p>Krótki opis dla produktu nr 2.</p>
+              <p>
+                <a class="btn btn-lg btn-dark" href="#"><i class="fab fa-apple"></i> App Store</a>
+                <a class="btn btn-lg btn-outline-dark" href="#"><i class="fab fa-google-play"></i> Google Play</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carousel-item product3" data-bs-interval="5000">
-        <!-- <img src="..." class="d-block w-100" alt="..."> -->
-        <div class="carousel-caption d-md-block">
-          <h5>Produkt nr 3</h5>
-          <p>Krótki opis dla produktu nr 3.</p>
+      <div class="carousel-item" data-bs-interval="5000">
+        <div class="row carousel-ancestor">
+          <div class="col-lg-5 offset-1 content-left d-flex align-items-center">
+            <img class="carousel-img-1" src="images/phone-carousel-1.png" alt="Product picture.">
+          </div>
+          <div class="col-lg-6 content-right d-flex align-items-center">
+            <div class="mobile-align-center">
+              <h5>Produkt nr 3</h5>
+              <p>Krótki opis dla produktu nr 3.</p>
+              <p>
+                <a class="btn btn-lg btn-dark" href="#"><i class="fab fa-apple"></i> App Store</a>
+                <a class="btn btn-lg btn-outline-dark" href="#"><i class="fab fa-google-play"></i> Google Play</a>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </section>
