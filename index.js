@@ -17,6 +17,11 @@ app.get('/:path', (req, res) => {
   res.render(path);
 });
 
+app.get('/products/:path', (req, res) => {
+  let path = req.params.path;
+  res.render(path);
+});
+
 app.listen(process.env.PORT || 3000, () => {
   console.log('Ready. Set. Go.');
 });
